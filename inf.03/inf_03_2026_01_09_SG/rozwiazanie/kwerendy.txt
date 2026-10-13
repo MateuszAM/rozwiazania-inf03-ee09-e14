@@ -1,0 +1,4 @@
+SELECT `imie`, `kolor`, `cena` FROM `klienci` WHERE `topKlient` = 1;
+SELECT `imie`, `cena` FROM `klienci` WHERE `termin` like '2024-05-23%';
+SELECT kl.`imie`, kl.kolor, ks.ksztalt FROM `klienci` kl INNER JOIN `ksztalty` ks ON kl.ksztalty_id = ks.id WHERE ks.ksztalt = 'migdał';
+ALTER TABLE `wzory` ADD COLUMN doplata INT;
