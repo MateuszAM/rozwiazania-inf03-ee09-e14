@@ -1,6 +1,9 @@
 # rozwiazania-inf03-ee09-e14
 
-Błąd możesz zgłosić za pomocą zakładki *Issues* lub wysyłając Pull Request.
+Błąd możesz zgłosić za pomocą:
+- zakładki *Issues*;
+- wysyłając Pull Request;
+- pisząc na dicordzie (mateuszam).
 
 ---
 
