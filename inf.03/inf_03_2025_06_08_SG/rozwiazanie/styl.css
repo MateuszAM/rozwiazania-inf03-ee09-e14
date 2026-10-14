@@ -1,0 +1,54 @@
+*{
+    text-align: center;
+    font-family: "Georgia";
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header, footer{
+    background-color: tomato;
+    color: mistyrose;
+    padding: 10px;
+}
+nav, main{
+    float: left;
+}
+div{
+    background-color: #ffaea5;
+    height: 170px;
+    font-size: 200%;
+}
+#Baza{
+    background-color: mistyrose;
+}
+nav{
+    width: 20%;
+}
+main{
+    width: 80%;
+    background-color: mistyrose;
+    height: 510px;
+    overflow: auto;
+}
+#opisySection, #galeriaSection{
+    display: none;
+}
+table{
+    margin: auto;
+    width: 60%;
+    border: 1px dashed indigo;
+}
+select, input{
+    margin: 20px;
+}
+dt{
+    font-weight: bold;
+    font-style: italic;
+}
+dt:hover{
+    font-size: 180%;
+}
+footer{
+    clear: both;
+}

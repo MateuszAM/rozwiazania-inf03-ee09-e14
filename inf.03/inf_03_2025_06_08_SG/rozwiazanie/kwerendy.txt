@@ -1,0 +1,4 @@
+SELECT `nazwa`, `dlugosc`, `szerokosc` FROM `smok` WHERE `pochodzenie` = 'Polska';
+SELECT DISTINCT `pochodzenie` FROM `smok` ORDER BY `pochodzenie`;
+SELECT p.rok, AVG(s.dlugosc) AS 'Średnia długość' FROM `parada` p JOIN `udzial` u ON p.id = u.id_parada JOIN `smok` s ON s.id = u.id_smok WHERE p.rok > '2025' GROUP BY p.rok;
+ALTER TABLE `parada` ADD COLUMN `lokalizacja` VARCHAR(100);
