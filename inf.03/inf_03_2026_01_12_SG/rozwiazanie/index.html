@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatuaże</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header id="header1">
+        <img src="logo.png" alt="salon">
+    </header>
+    <header id="header2">
+        <h1>Studio Tatuażu</h1>
+    </header>
+    <section id="sekcja">
+        <h2>Galeria</h2>
+        <img src="smok.png" alt="smok.png" class="miniatury">
+        <img src="koliber.png" alt="koliber.png" class="miniatury">
+    </section>
+    <aside>
+        <h3>Dodaj wzór</h3>
+        <form>
+            <label for="wzor">Wzór:</label><br>
+            <input type="file" id="wzor" accept=".png"><br>
+            <label for="kolor">Kolor:</label><br>
+            <select id="kolor">
+                <option value="czarny">Czarny</option>
+                <option value="czerwony">Czerwony</option>
+                <option value="zielony">Zielony</option>
+                <option value="niebieski">Niebieski</option>
+            </select><br>
+            <label for="cena">Cena:</label><br>
+            <input type="number" id="cena"><br>
+            <button type="button" onclick="wycena()">Dodaj Wzór</button>
+        </form>
+    </aside>
+
+    <footer><p>Autor strony: <a href="https://github.com/MateuszAM" target="_blank" style="font-size: unset; color: unset; margin: unset;text-decoration: none !important;">MateuszAM</a></p></footer>
+    <script>
+        function wycena(){
+        let fileInput = document.getElementById("wzor");
+        let colorSelect = document.getElementById("kolor").value;
+        let priceInput = document.getElementById("cena").value;
+        let section = document.getElementById("sekcja");
+        let fileName = fileInput.value.split('\\').pop();
+
+        alert(`Wzór: ${fileName}, kolor ${colorSelect} w cenie ${priceInput} zł`);
+
+        section.innerHTML += `<img src="${fileName}" alt="${fileName}" class="miniatury">`
+        }
+
+    </script>
+</body>
+</html>
