@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Wszystkie Smaki</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header>
+        <h1>Witamy w restauracji „Wszystkie Smaki”</h1>
+    </header>
+    <main>
+        <section id="leftSection">
+            <img src="menu.jpg" alt="Nasze danie">
+        </section>
+        <section id="rightSection">
+            <h4>U nas dobrze zjesz!</h4>
+            <ol>
+                <li>Obiady od 40 zł</li>
+                <li>Przekąski od 10 zł</li>
+                <li>Kolacje od 20 zł</li>
+            </ol>
+        </section>
+        <section id="bottomSection">
+            <h2>Zarezerwuj stolik on-line</h2>
+            <form action="rezerwacja.php" method="post">
+                <label for="dateInput">Data (format rrrr-mm-dd):</label><br>
+                <input type="date" name="dateInput" id="dateInput"><br>
+                <label for="personsInput">Ile osób?</label><br>
+                <input type="number" name="personsInput" id="personsInput"><br>
+                <label for="phoneInput">Twój numer telefonu:</label><br>
+                <input type="tel" name="phoneInput" id="phoneInput"><br>
+                <input type="checkbox" name="rodoCheckbox" id="rodoCheckbox">
+                <label for="rodoCheckbox">Zgadzam się na przetwarzanie moich danych osobowych</label><br>
+                <button type="reset">WYCZYŚĆ</button>
+                <button type="submit" name="submitButton">REZERWUJ</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Stronę internetową opracował: <em><a href="https://github.com/MateuszAM" target="_blank" style="font-size: unset; color: unset; margin: unset;text-decoration: none !important;">MateuszAM</a></em>
+    </footer>
+</body>
+</html>
