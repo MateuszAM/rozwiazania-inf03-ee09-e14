@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Całodobowa stacja paliw</h1>
+    </header>
+    <nav>
+        <a href="stacja.html">
+            <img src="home.png" alt="">
+        </a>
+        <a href="obliczenia.html">
+            <img src="znak.png" alt="">
+        </a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </nav>
+    <main>
+        <section id="lewaSekcja">
+            <h2>Orientacyjny koszt paliwa</h2>
+            <form>
+                <label for="paliwoWejsce">Rodzaj paliwa (1-benzyna, 2-olej napędowy):</label><br>
+                <input type="number" id="paliwoWejsce"><br>
+                <label for="litryWejsce">Ile litrów?</label><br>
+                <input type="number" id="litryWejsce"><br>
+                <button type="button" id="obliczPrzycisk" onclick="obliczCene()">OBLICZ</button>
+            </form>
+            <p id="wynik"></p>
+        </section>
+        <section id="prawaSekcja">
+            <img src="samochod.png" alt="samochód" id="samochodObraz">
+        </section>
+    </main>
+    <footer>
+        <p>Stronę opracował: <a href="https://github.com/MateuszAM" target="_blank" style="font-size: unset; color: unset; margin: unset;text-decoration: none !important; padding: 0 !important;">MateuszAM</a></p>
+    </footer>
+    <script>
+    function obliczCene(){
+        let obliczPrzycisk = document.getElementById('obliczPrzycisk');
+        let wynik = document.getElementById('wynik');
+        let lewaSekcja = document.getElementById('lewaSekcja')
+        let paliwo = 0;
+        let paliwoWejsce = document.getElementById('paliwoWejsce').value;
+        let litryWejsce = document.getElementById('litryWejsce').value;
+        if(paliwoWejsce == 1){
+            paliwo = litryWejsce * 4;
+        }else if(paliwoWejsce == 2){
+            paliwo = litryWejsce * 3.5;
+        }else{
+            paliwo = litryWejsce * 0;
+        }
+        wynik.innerHTML = `koszt paliwa: ${paliwo} zł`;
+    }
+</script>
+</body>
+</html>

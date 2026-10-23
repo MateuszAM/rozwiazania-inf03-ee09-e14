@@ -39,17 +39,16 @@
     <footer><p>Autor strony: <a href="https://github.com/MateuszAM" target="_blank" style="font-size: unset; color: unset; margin: unset;text-decoration: none !important;">MateuszAM</a></p></footer>
     <script>
         function wycena(){
-        let fileInput = document.getElementById("wzor");
-        let colorSelect = document.getElementById("kolor").value;
-        let priceInput = document.getElementById("cena").value;
-        let section = document.getElementById("sekcja");
-        let fileName = fileInput.value.split('\\').pop();
+            let fileInput = document.getElementById("wzor");
+            let colorSelect = document.getElementById("kolor").value;
+            let priceInput = document.getElementById("cena").value;
+            let section = document.getElementById("sekcja");
+            let fileName = fileInput.value.split('\\').pop();
 
-        alert(`Wzór: ${fileName}, kolor ${colorSelect} w cenie ${priceInput} zł`);
+            alert(`Wzór: ${fileName}, kolor ${colorSelect} w cenie ${priceInput} zł`);
 
-        section.innerHTML += `<img src="${fileName}" alt="${fileName}" class="miniatury">`
+            section.innerHTML += `<img src="${fileName}" alt="${fileName}" class="miniatury">`
         }
-
     </script>
 </body>
 </html>
