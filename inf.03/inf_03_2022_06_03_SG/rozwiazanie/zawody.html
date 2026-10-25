@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawody wędkarskie</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <header>
+        <section id="lewyNaglowek">
+            <h1>Zawody polskich wędkarzy</h1>
+        </section>
+        <section id="prawyNaglowek">
+            <img src="zawody.jpg" alt="wędkowanie">
+        </section>
+    </header>
+    <main>
+        <h3>Łowiska</h3>
+        <ul>
+            <li>Zalew Węgrowski</li>
+            <li>Zbiornik Bukówka</li>
+            <li>Jeziorko Bartbetowskie</li>
+            <li>Warta-Obrzycko</li>
+        </ul>
+        <h3>Dodaj zawody wędkarskie</h3>
+        <form action="zgloszenie.php" method="post">
+            <label for="lowiskoWejscie">Łowisko: </label>
+            <input type="number" name="lowiskoWejscie" id="lowiskoWejscie"><br>
+            <label for="dataWejscie">Data: </label>
+            <input type="date" name="dataWejscie" id="dataWejscie"><br>
+            <label for="sendziaWejscie">Sędzia: </label>
+            <input type="text" name="sendziaWejscie" id="sendziaWejscie"><br>
+            <input type="reset" value="CZYŚĆ">
+            <input type="submit" value="DODAJ">
+        </form>
+    </main>
+    <footer>
+        <section id="lewaStopka">
+            <a href="kwerendy.txt">Pobierz</a>
+        </section>
+        <section id="prawaStopka">
+            <p>Stronę przygotował: <a href="https://github.com/MateuszAM" target="_blank" style="font-size: unset; color: unset; margin: unset;text-decoration: none !important; padding: 0; background-color: seagreen; margin: 0;">MateuszAM</a></p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    font-family: "Verdana";
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    display: flex;
+    flex-direction: row;
+}
+#lewyNaglowek, #prawyNaglowek{
+    background-color: seagreen;
+    color: white;
+    line-height: 150px;
+    height: 260px;
+    font-size: 160%;
+}
+#lewyNaglowek{
+    flex-basis: 75%;
+}
+#prawyNaglowek{
+    flex-basis: 25%;
+    text-align: right;
+}
+main{
+    background-color: mintcream;
+    padding: 80px;
+}
+#lewaStopka, #prawaStopka{
+    background-color: seagreen;
+    color: white;
+    flex-basis: 50%;
+    height: 70px;
+    text-align: center;
+}
+input{
+    margin-bottom: 20px;
+}
+img{
+    box-shadow: 15px 15px 10px Dimgray;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
+}
