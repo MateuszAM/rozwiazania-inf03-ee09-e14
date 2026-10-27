@@ -1,0 +1,46 @@
+*{
+    font-family: "Cambria";
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+}
+header, footer{
+    background-color: #829EB9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#left, #right{
+    background-color: #B3C6D9;
+    height: 400px;
+    flex-basis: 25%;
+    padding-top: 100px;
+}
+#center{
+    background-color: #E0E9F1;
+    height: 400px;
+    flex-basis: 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+table{
+    border: 1px dimgray solid;
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+td, th{
+    border: 1px solid dimgray;
+}
+td:hover{
+    background-color: steelblue;
+    color: white;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}

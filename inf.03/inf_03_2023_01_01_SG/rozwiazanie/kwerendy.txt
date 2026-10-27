@@ -1,0 +1,4 @@
+SELECT `cena`, `pojemnosc` FROM `farby` WHERE `kolor` = 'czerwony'; 
+SELECT `kolor`, `cena` / `pojemnosc` AS 'cena jednostkowa' FROM `farby`;
+SELECT `f`.`kolor`, `m`.`liczba_puszek` FROM `malowanie` m INNER JOIN `farby` f ON `f`.`id_farby` = `m`.`id_farby` WHERE `m`.`id_pomieszczenia` = 3;
+CREATE VIEW pomieszczenie1 AS SELECT `id_sciany`, `id_farby`, `liczba_puszek` FROM `malowanie` WHERE `id_pomieszczenia` = 1;
