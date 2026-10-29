@@ -1,0 +1,4 @@
+SELECT `nazwa`, `ulica` FROM `kwiaciarnie` WHERE `miasto` = 'malbork';
+SELECT `id_kwiaciarni`, count(*) FROM `zamowienia` GROUP BY `id_kwiaciarni`; 
+SELECT `k`.`nazwa`, `k`.`miasto`, `z`.`kwiaty` FROM `zamowienia` z INNER JOIN `kwiaciarnie` k ON `z`.`id_kwiaciarni` = `k`.`id_kwiaciarni` WHERE `z`.`data` = '2017-01-07';
+CREATE TABLE klienci(id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, imie varchar(15), nazwisko varchar(15), rabat INT UNSIGNED);
